@@ -14,9 +14,8 @@
 
 package com.aperigeek.hskp.provider;
 
-import android.app.ListActivity;
+import android.app.Activity;
 import android.os.Bundle;
-import android.widget.ArrayAdapter;
 import com.aperigeek.hskp.R;
 
 /**
@@ -25,15 +24,13 @@ import com.aperigeek.hskp.R;
  *
  * @author Vivien Barousse
  */
-public class SampleProvider extends ListActivity {
+public class SampleProvider extends Activity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setListAdapter(new ArrayAdapter(this,
-                R.layout.provider_list_item,
-                new Object[]{"This is a sample provider"}));
+        setContentView(R.layout.sample_provider);
     }
 
 }
