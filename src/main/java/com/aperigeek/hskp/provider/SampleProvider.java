@@ -9,7 +9,6 @@ import android.app.ListActivity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import com.aperigeek.hskp.R;
-import com.aperigeek.hskp.R;
 
 /**
  * This class is a sample HotSpot provider, added for testing purposes. It has
