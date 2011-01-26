@@ -15,7 +15,13 @@
 package com.aperigeek.hskp.hsp;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 import com.aperigeek.hskp.R;
 
 /**
@@ -24,13 +30,42 @@ import com.aperigeek.hskp.R;
  *
  * @author Vivien Barousse
  */
-public class SampleProvider extends Activity {
+public class SampleProvider extends Activity implements OnClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.sample_provider);
+        
+        EditText username = (EditText) findViewById(R.id.username);
+        EditText password = (EditText) findViewById(R.id.password);
+
+        SharedPreferences prefs = getSharedPreferences("SampleProvider", 0);
+        username.setText(prefs.getString("username", null));
+        password.setText(prefs.getString("password", null));
+
+        Button buttonDone = (Button) findViewById(R.id.button_done);
+        Button buttonCancel = (Button) findViewById(R.id.button_cancel);
+        buttonDone.setOnClickListener(this);
+        buttonCancel.setOnClickListener(this);
+    }
+
+    public void onClick(View view) {
+        if (view.getId() == R.id.button_done) {
+            EditText username = (EditText) findViewById(R.id.username);
+            EditText password = (EditText) findViewById(R.id.password);
+
+            SharedPreferences prefs = getSharedPreferences("SampleProvider", 0);
+            Editor editor = prefs.edit();
+
+            editor.putString("username", username.getText().toString());
+            editor.putString("password", password.getText().toString());
+
+            editor.commit();
+        }
+        
+        finish();
     }
 
 }
