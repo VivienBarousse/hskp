@@ -31,14 +31,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".hsp.SampleProvider2"
-                  android:label="@string/sample_provider_2">
-            <intent-filter>
-                <action android:name="com.aperigeek.hskp.Provider" />
-                <category android:name="com.aperigeek.hskp.PROVIDER" />
-            </intent-filter>
-        </activity>
-
     </application>
 
     <uses-sdk android:minSdkVersion="8" />
