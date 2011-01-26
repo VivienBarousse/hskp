@@ -17,7 +17,18 @@ package com.aperigeek.hskp.bean;
 /**
  * 
  * @author Colin Hebert
+ * @author Vivien Barousse
  */
 public class HotSpotProvider {
 
+    private final String name;
+
+    public HotSpotProvider(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+    
 }
