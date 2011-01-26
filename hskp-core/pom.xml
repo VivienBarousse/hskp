@@ -4,10 +4,10 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aperigeek.hskp</groupId>
-    <artifactId>hskp</artifactId>
+    <artifactId>hskp-core</artifactId>
     <packaging>apk</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>hskp</name>
+    <name>hskp-core</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
