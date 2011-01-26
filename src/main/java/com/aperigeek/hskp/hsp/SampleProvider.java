@@ -12,7 +12,7 @@
  *  limitations under the License.
  */
 
-package com.aperigeek.hskp.provider;
+package com.aperigeek.hskp.hsp;
 
 import android.app.Activity;
 import android.os.Bundle;
