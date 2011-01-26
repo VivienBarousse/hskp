@@ -12,47 +12,28 @@
  *  limitations under the License.
  */
 
-package com.aperigeek.hskp;
+package com.aperigeek.hskp.hsp;
 
 import android.app.ListActivity;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.widget.ArrayAdapter;
+import com.aperigeek.hskp.R;
 
 /**
- * Application main activity, used to launch the application
+ * This class is a sample HotSpot provider, added for testing purposes. It has
+ * no preferences, and doesn't do anything concrete.
  *
  * @author Vivien Barousse
  */
-public class MainActivity extends ListActivity {
+public class SampleProvider2 extends ListActivity {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setListAdapter(new ArrayAdapter(this,
-                R.layout.list_item,
-                new Object[]{"Hello, world!"}));
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.list_menu, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onMenuItemSelected(int featureId, MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.list_menu_add:
-                startActivity(new Intent("com.aperigeek.hskp.PROVIDERS"));
-                return true;
-        }
-        return super.onMenuItemSelected(featureId, item);
+                R.layout.provider_list_item,
+                new Object[]{"This is a sample provider (again)"}));
     }
 
 }

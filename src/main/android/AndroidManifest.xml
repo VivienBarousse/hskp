@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".provider.SampleProvider"
+        <activity android:name=".hsp.SampleProvider"
                   android:label="@string/sample_provider">
             <intent-filter>
                 <action android:name="com.aperigeek.hskp.Provider" />
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".provider.SampleProvider2"
+        <activity android:name=".hsp.SampleProvider2"
                   android:label="@string/sample_provider_2">
             <intent-filter>
                 <action android:name="com.aperigeek.hskp.Provider" />
