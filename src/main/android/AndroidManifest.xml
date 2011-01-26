@@ -7,7 +7,7 @@
     <application android:icon="@drawable/icon" android:label="@string/app_name">
 
         <activity android:name=".ProvidersListActivity"
-                  android:label="@string/providers_list_label">
+                  android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -15,6 +15,7 @@
         </activity>
 
         <activity android:name=".hsp.SampleProvider"
+                  android:icon="@drawable/icon"
                   android:label="@string/sample_provider">
             <intent-filter>
                 <action android:name="com.aperigeek.hskp.Provider" />
