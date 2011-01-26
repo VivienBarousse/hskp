@@ -2,9 +2,11 @@
 package com.aperigeek.hskp;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 
 public class MainActivity extends ListActivity {
@@ -15,7 +17,7 @@ public class MainActivity extends ListActivity {
 
         setListAdapter(new ArrayAdapter(this,
                 R.layout.list_item,
-                new Object[] {"Item 1", "Item 2", "Item 3"}));
+                new Object[]{"Hello, world!"}));
     }
 
     @Override
@@ -23,6 +25,16 @@ public class MainActivity extends ListActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.list_menu, menu);
         return true;
+    }
+
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.list_menu_add:
+                startActivity(new Intent("com.aperigeek.hskp.PROVIDERS"));
+                return true;
+        }
+        return super.onMenuItemSelected(featureId, item);
     }
 
 }

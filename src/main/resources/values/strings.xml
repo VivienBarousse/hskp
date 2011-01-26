@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">HotSpot Keeper</string>
     <string id="list_menu_add" name="list_menu_add">Add</string>
+    <string id="providers_list_label" name="providers_list_label">Available providers</string>
+    <string id="sample_provider" name="sample_provider">Sample provider</string>
+    <string id="sample_provider_2" name="sample_provider_2">Sample provider 2</string>
 </resources>

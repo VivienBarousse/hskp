@@ -3,7 +3,9 @@
       package="com.aperigeek.hskp"
       android:versionCode="1"
       android:versionName="1.0">
+
     <application android:icon="@drawable/icon" android:label="@string/app_name">
+
         <activity android:name=".MainActivity"
                   android:label="@string/app_name">
             <intent-filter>
@@ -11,6 +13,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".ProvidersListActivity"
+                  android:label="@string/providers_list_label">
+            <intent-filter>
+                <action android:name="com.aperigeek.hskp.PROVIDERS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".provider.SampleProvider"
+                  android:label="@string/sample_provider">
+            <intent-filter>
+                <action android:name="com.aperigeek.hskp.Provider" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.aperigeek.hskp.PROVIDER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".provider.SampleProvider2"
+                  android:label="@string/sample_provider_2">
+            <intent-filter>
+                <action android:name="com.aperigeek.hskp.Provider" />
+                <category android:name="com.aperigeek.hskp.PROVIDER" />
+            </intent-filter>
+        </activity>
+
     </application>
+
     <uses-sdk android:minSdkVersion="8" />
 </manifest>
