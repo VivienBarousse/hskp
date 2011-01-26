@@ -19,11 +19,11 @@ package com.aperigeek.hskp.bean;
  * @author Colin Hebert
  * @author Vivien Barousse
  */
-public class HotSpotProvider {
+public class HotSpotConnection {
 
     private final String name;
 
-    public HotSpotProvider(String name) {
+    public HotSpotConnection(String name) {
         this.name = name;
     }
 
