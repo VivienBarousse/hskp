@@ -4,12 +4,5 @@
     <string name="app_name">HotSpot Keeper</string>
     <string id="list_menu_add" name="list_menu_add">Add</string>
     <string id="providers_list_label" name="providers_list_label">Available providers</string>
-
-    <!-- Strings related to the sample provider -->
-    <string id="sample_provider" name="sample_provider">Sample provider</string>
-    <string id="button_done" name="button_done">OK</string>
-    <string id="button_cancel" name="button_cancel">Cancel</string>
-    <string id="username" name="username">Username</string>
-    <string id="password" name="password">Password</string>
     
 </resources>

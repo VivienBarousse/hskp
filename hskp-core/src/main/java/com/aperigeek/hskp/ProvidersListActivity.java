@@ -107,8 +107,8 @@ public class ProvidersListActivity extends ListActivity {
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onResume() {
+        super.onResume();
 
         Intent intent = new Intent("com.aperigeek.hskp.Provider");
         intent.addCategory("com.aperigeek.hskp.PROVIDER");
