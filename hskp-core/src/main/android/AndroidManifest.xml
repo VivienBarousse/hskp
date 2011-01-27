@@ -15,6 +15,18 @@
             </intent-filter>
         </activity>
 
+		<receiver android:name=".receiver.WifiBroadcastReceiver">
+			<intent-filter>
+				<action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+			</intent-filter>
+		</receiver>
+
+		<service android:name=".service.HskpService">
+			<intent-filter>
+				<action android:name="com.aperigeek.hskp.HskpService" />
+			</intent-filter>
+		</service>
+
     </application>
 
     <uses-sdk android:minSdkVersion="8" />
