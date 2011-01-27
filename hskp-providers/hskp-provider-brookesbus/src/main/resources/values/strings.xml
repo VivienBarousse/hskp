@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string id="app_name" name="app_name">BrookesBus provider for HotSpot Keeper</string>
+    <string id="provider_name" name="provider_name">BrookesBus</string>
+    <string id="button_done" name="button_done">Done</string>
+    <string id="button_cancel" name="button_cancel">Cancel</string>
+    <string id="accept_tos" name="accept_tos">Accept TOS</string>
+    
+</resources>
