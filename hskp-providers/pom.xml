@@ -10,8 +10,15 @@
     <name>hskp-providers</name>
     <url>http://maven.apache.org</url>
 
+    <parent>
+        <groupId>com.aperigeek.hskp</groupId>
+        <artifactId>hskp-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <modules>
         <module>hskp-provider-sample</module>
+        <module>hskp-provider-brookesbus</module>
     </modules>
 
 </project>

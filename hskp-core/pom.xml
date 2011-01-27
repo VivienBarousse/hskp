@@ -10,6 +10,12 @@
     <name>hskp-core</name>
     <url>http://maven.apache.org</url>
 
+    <parent>
+        <groupId>com.aperigeek.hskp</groupId>
+        <artifactId>hskp-parent</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <dependencies>
         <dependency>
             <groupId>com.google.android</groupId>
