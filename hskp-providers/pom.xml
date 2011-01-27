@@ -4,15 +4,14 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.aperigeek.hskp</groupId>
-    <artifactId>hskp-parent</artifactId>
+    <artifactId>hskp-providers</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>hskp-parent</name>
+    <name>hskp-providers</name>
     <url>http://maven.apache.org</url>
 
     <modules>
-        <module>hskp-core</module>
-        <module>hskp-providers</module>
+        <module>hskp-provider-sample</module>
     </modules>
 
 </project>

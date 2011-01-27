@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string id="app_name" name="app_name">Sample provider for HotSpot Keeper</string>
+    <string id="sample_provider" name="sample_provider">Sample provider</string>
+    <string id="button_done" name="button_done">Done</string>
+    <string id="button_cancel" name="button_cancel">Cancel</string>
+    <string id="username" name="username">Username</string>
+    <string id="password" name="password">Password</string>
+    
+</resources>
