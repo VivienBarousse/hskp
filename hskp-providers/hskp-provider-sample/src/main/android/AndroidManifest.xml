@@ -17,6 +17,12 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".SampleReceiver">
+            <intent-filter>
+                <action android:name="com.aperigeek.hskp.receiver.Hotspot" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
     <uses-sdk android:minSdkVersion="8" />
