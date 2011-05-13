@@ -1,1 +1,7 @@
 hskp: HotSpot Keeper
+
+HotSpot keeper is an Android application that connects you automatically to
+an open WiFi HotSpot when it encounters one. You can also provide your 
+credentials for HotSpots that require authentication (such as Starbucks),
+so that you don't need to manually fill the forms before using the
+WiFi connection.
